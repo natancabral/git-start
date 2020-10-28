@@ -8,7 +8,7 @@ cd project-name
 
 ### Initialize Git
 
-You need install git first. Terminal: "sudo apt install git".
+* en: You need install GIT first. Terminal: "sudo apt install git".
 
 ```bash
 git init
@@ -16,7 +16,7 @@ git init
 
 **GitHub**
 
-> You need login on GitHub e create repository (button plus named new repository).
+> You need login on GitHub to create a new repository (+ > new repository).
 > Give your repository a name--ideally the same name as your local project.
 > The next screen you see will be important, so don't close it.
 > Inside click on Code > Clone (url)
@@ -62,7 +62,7 @@ git config --global credential.helper cache
 
 ### Push Origin Master
 
-* Change file or create a new file and send to repositoty:
+* en: Change file or create a new file and send to repositoty:
 
 ```bash
 git add .
@@ -70,6 +70,24 @@ git commit -m "words"
 git push origin master # or git push
 ```
 
+## Branch
+
+### Create Branch
+
+$ branch checkout -b new_branch_name # no necessary -b if branch exists
+$ git status
+... add and commit
+$ git push origin new_branch_name
+
+### Find Branches
+
+On GitHub open repository and find above files a link named BRANCHES.
+All branches storages on this page
+
+### Merge Branches
+
+git checkout master
+git merge new_branch_name
 
 
 
