@@ -1,6 +1,6 @@
 ### Start Project
 
-* en: Create a new project to start
+* en: Create a new project to start.
 ```bash
 mkdir project-name # create folder project
 cd project-name # enter folder project
@@ -23,7 +23,7 @@ git init # create files git
 
 ### Back Terminal
 
-* en: Create a new file
+* en: Create a new file.
 ```bash
 echo '" Title' > README.md
 ```
@@ -48,12 +48,12 @@ git config --list # list data
 nano ~/.gitconfig # edit file
 ```
 
-* en: Save username for 8h
+* en: Save username for 8h.
 ```bash
 git config --lobal credential.helper ‘cache –timeout=28800’
 ```
 
-* en: Save username permanently
+* en: Save username permanently.
 ```bash
 git config --global credential.helper cache
 ```
