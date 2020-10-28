@@ -120,3 +120,20 @@ git brash -d new_branch_name
 git checkout @{-1} # back -1 branch history
 git checkout -
 ```
+### Previous COMMITS (DANGERS)
+[Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
+
+```bash
+git log # show commits
+# copy head commit, example: c14809fafb08b9e96ff2879999ba8c807d10fb07
+git reset --hard c14809fa # Won't have to type the entire sha, just a little bit will work
+# or
+git reset --sorf c14809fa # Won't have to type the entire sha, just a little bit will work
+```
+or
+```bash
+git log # show commits
+# copy head commit, example: c14809fafb08b9e96ff2879999ba8c807d10fb07
+git revert --no-commit c14809fa #  Won't have to type the entire sha, just a little bit will work
+git commit
+```
