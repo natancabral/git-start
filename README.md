@@ -1,16 +1,14 @@
 ### Start Project
 
+* en: Create a new project to start
 ```bash
-$ mkdir project-name
-$ cd project-name
+mkdir project-name
+cd project-name
 ```
 
-```terminal
-$ mkdir project-name
-$ cd project-name
-```
+### Initialize Git
 
-### Create Git
+You need install git first. Terminal: "sudo apt install git".
 
 ```bash
 git init
