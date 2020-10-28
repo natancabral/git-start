@@ -105,3 +105,16 @@ git push origin master
 git push
 ```
 
+### Delete Branch
+
+* en: After merge with master
+```bash
+git brash -d new_branch_name
+```
+
+### Previous (DANGERS)
+[Link](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
+```bash
+git checkout @{-1} # back -1 branch history
+git checkout -
+```
