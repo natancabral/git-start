@@ -2,8 +2,8 @@
 
 * en: Create a new project to start
 ```bash
-mkdir project-name
-cd project-name
+mkdir project-name # create folder project
+cd project-name # enter folder project
 ```
 
 ### Initialize Git
@@ -11,7 +11,7 @@ cd project-name
 * en: You need install GIT first. Terminal: "sudo apt install git".
 
 ```bash
-git init
+git init # create files git
 ```
 
 **GitHub**
@@ -33,6 +33,8 @@ echo '" Title' > README.md
 git remote add origin https://github.com/<github_username>/<project_name>.git
 git remote -v # show origin 
 ```
+
+## Global Config
 
 **Configure Global UserName**
 
@@ -89,11 +91,11 @@ All branches storages on this page
 ### Merge Branches
 
 ```bash
-git checkout master
+git checkout master # change to main user, master is the first and hight branch
 git merge new_branch_name
 ```
 
-* en: Now send new files change
+* en: Now send files change to repository
 
 ```bash
 git add .
