@@ -91,7 +91,7 @@ All branches storages on this page
 ### Merge Branches
 
 ```bash
-git checkout master # change to main user, master is the first and hight branch
+git checkout master # change to main branch, master branch
 git merge new_branch_name
 ```
 
