@@ -74,20 +74,32 @@ git push origin master # or git push
 
 ### Create Branch
 
+```bash
 $ branch checkout -b new_branch_name # no necessary -b if branch exists
 $ git status
 ... add and commit
 $ git push origin new_branch_name
+```
 
 ### Find Branches
 
-On GitHub open repository and find above files a link named BRANCHES.
+* en: On GitHub open repository and find above files a link named BRANCHES.
 All branches storages on this page
 
 ### Merge Branches
 
+```bash
 git checkout master
 git merge new_branch_name
+```
 
+* en: Now send new files change
 
+```bash
+git add .
+git commit -m "your commit"
+git push origin master
+# or
+git push
+```
 
