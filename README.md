@@ -144,7 +144,7 @@ git checkout -
 ```
 #### 2 of 4 ) Previous Commit RESET | REVERT
 
-[Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
+[Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git)
 
 **RESET**
 
