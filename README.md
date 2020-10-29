@@ -122,6 +122,7 @@ git brash -d new_branch_name
 
 ## Previous Commits and Branchs
 
+<<<<<<< HEAD
 > pt: Qual a diferença entre RESET e REVERT?
 > * **reset** Aponta para uma COMMIT e apaga tudo que foi criado ou alterado após essa commit específica. Perdendo todo seu histórico. 
 > * 1,2,[3],4,5 -> 1,2,3
@@ -131,13 +132,23 @@ git brash -d new_branch_name
 ### 1 of 4 ) Previous Branch @{-1}
 [Link](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
 [Link](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
+=======
+### 1 of 4 ) Previous Commit
+[Link 1](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
+[Link 2](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
+>>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
 
 ```bash
 git checkout @{-1} # back -1 branch history
 git checkout -
 ```
+<<<<<<< HEAD
 ### 2 of 4 ) Previous Commit RESET | REVERT
 [Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
+=======
+### 2 of 4 ) Previous Commit
+[Link 1](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git)
+>>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
 
 **RESET**
 
@@ -210,4 +221,8 @@ git checkout 0d1d7fc32 .
 git commit
 ```
 
+<<<<<<< HEAD
 
+=======
+Final 2020!
+>>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
