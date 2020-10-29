@@ -122,33 +122,24 @@ git brash -d new_branch_name
 
 ## Previous Commits and Branchs
 
-<<<<<<< HEAD
 > pt: Qual a diferença entre RESET e REVERT?
-> * **reset** Aponta para uma COMMIT e apaga tudo que foi criado ou alterado após essa commit específica. Perdendo todo seu histórico. 
+> * **RESET** - Aponta para uma COMMIT e apaga tudo que foi criado ou alterado após essa commit específica. Perdendo todo seu histórico. 
 > * 1,2,[3],4,5 -> 1,2,3
-> * **revert** Reverte uma COMMIT específica, as alterações dessa commit escolhida será revertida mas o histórico posteior mantido. 
+> * **REVERT** - Reverte uma COMMIT específica, as alterações dessa commit escolhida será revertida mas o histórico posteior mantido. 
 > * 1,2,[3],4,5 -> 1,2,4,5
 
-### 1 of 4 ) Previous Branch @{-1}
+#### 1 of 4 ) Previous Branch @{-1}
+
 [Link](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
 [Link](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
-=======
-### 1 of 4 ) Previous Commit
-[Link 1](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
-[Link 2](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
->>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
 
 ```bash
 git checkout @{-1} # back -1 branch history
 git checkout -
 ```
-<<<<<<< HEAD
-### 2 of 4 ) Previous Commit RESET | REVERT
+#### 2 of 4 ) Previous Commit RESET | REVERT
+
 [Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
-=======
-### 2 of 4 ) Previous Commit
-[Link 1](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git)
->>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
 
 **RESET**
 
@@ -168,11 +159,12 @@ git commit
 
 ```bash
 git log --oneline # show commits
-# copy head commit, example: c14809fafb08b9e96ff2879999ba8c807d10fb07
 git revert --no-commit c14809fa
+git revert c14809fa
+git revert c14809fa .. .. .. # mores commits
 git commit
 ```
-### 3 of 4 ) Hard delete unpublished commits
+#### 3 of 4 ) Hard delete unpublished commits
 
 If, on the other hand, you want to really get rid of everything you've done since then, there are two possibilities. One, if you haven't published any of these commits, simply reset:
 
@@ -195,7 +187,7 @@ git stash pop
 # changed since the commit you reset to.
 ```
 
-### 4 of 4 ) Undo published commits with new commits
+#### 4 of 4 ) Undo published commits with new commits
 
 On the other hand, if you've published the work, you probably don't want to reset the branch, since that's effectively rewriting history. In that case, you could indeed revert the commits. With Git, revert has a very specific meaning: create a commit with the reverse patch to cancel it out. This way you don't rewrite any history.
 
@@ -221,8 +213,4 @@ git checkout 0d1d7fc32 .
 git commit
 ```
 
-<<<<<<< HEAD
 
-=======
-Final 2020!
->>>>>>> 5cf8c4740ad5f59231d08ccd49fc4665c2829c63
