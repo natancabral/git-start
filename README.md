@@ -105,6 +105,14 @@ git push origin master
 git push
 ```
 
+### Log
+
+* en: Show pushes
+```bash
+git log
+git log --oneline # short
+```
+
 ### Delete Branch
 
 * en: After merge with master
