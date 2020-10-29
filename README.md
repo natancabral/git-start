@@ -34,6 +34,11 @@ git remote add origin https://github.com/<github_username>/<project_name>.git
 git remote -v # show origin 
 ```
 
+* en: Now configure you user Master
+```bash
+git push --set-upstream origin master
+```
+
 ## Global Config
 
 **Configure Global UserName**
