@@ -168,6 +168,11 @@ git revert c14809fa --no-commit # no commit this revert
 # final
 git commit
 ```
+Revert error: go back
+```bash
+git revert --abort
+```
+
 #### 3 of 4 ) Hard delete unpublished commits
 
 If, on the other hand, you want to really get rid of everything you've done since then, there are two possibilities. One, if you haven't published any of these commits, simply reset:
