@@ -140,7 +140,7 @@ git reset --sorf c14809fa # Won't have to type the entire sha, just a little bit
 ```
 or
 ```bash
-git log # show commits
+git log --oneline # show commits
 # copy head commit, example: c14809fafb08b9e96ff2879999ba8c807d10fb07
 git revert --no-commit c14809fa #  Won't have to type the entire sha, just a little bit will work
 git commit
