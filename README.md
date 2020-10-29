@@ -159,9 +159,13 @@ git commit
 
 ```bash
 git log --oneline # show commits
-git revert --no-commit c14809fa
 git revert c14809fa
-git revert c14809fa .. .. .. # mores commits
+git revert c14809fa 0d1d7fc32  # 2 commits
+git revert c14809fa..0d1d7fc32 # range commits
+# flags
+git revert c14809fa --no-edit # no open file revert
+git revert c14809fa --no-commit # no commit this revert
+# final
 git commit
 ```
 #### 3 of 4 ) Hard delete unpublished commits
