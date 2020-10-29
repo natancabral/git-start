@@ -123,15 +123,15 @@ git brash -d new_branch_name
 ## Previous Commits
 
 ### 1 of 4 ) Previous Commit
-[Link](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
-[Link](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
+[Link 1](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
+[Link 2](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
 
 ```bash
 git checkout @{-1} # back -1 branch history
 git checkout -
 ```
 ### 2 of 4 ) Previous Commit
-[Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
+[Link 1](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git)
 
 ```bash
 git log --oneline # show commits
