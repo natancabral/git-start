@@ -120,9 +120,15 @@ git log --oneline # short
 git brash -d new_branch_name
 ```
 
-## Previous Commits
+## Previous Commits and Branchs
 
-### 1 of 4 ) Previous Commit
+> pt: Qual a diferença entre RESET e REVERT?
+> * **reset** Aponta para uma COMMIT e apaga tudo que foi criado ou alterado após essa commit específica. Perdendo todo seu histórico. 
+> * 1,2,[3],4,5 -> 1,2,3
+> * **revert** Reverte uma COMMIT específica, as alterações dessa commit escolhida será revertida mas o histórico posteior mantido. 
+> * 1,2,[3],4,5 -> 1,2,4,5
+
+### 1 of 4 ) Previous Branch @{-1}
 [Link](https://marcgg.com/blog/2015/10/18/git-checkout-minus/)
 [Link](https://stackoverflow.com/questions/7206801/is-there-any-way-to-git-checkout-previous-branch)
 
@@ -130,32 +136,44 @@ git brash -d new_branch_name
 git checkout @{-1} # back -1 branch history
 git checkout -
 ```
-### 2 of 4 ) Previous Commit
+### 2 of 4 ) Previous Commit RESET | REVERT
 [Link](https://stackoverflow.com/questions/3639115/reverting-to-a-specific-commit-based-on-commit-id-with-git
+
+**RESET**
 
 ```bash
 git log --oneline # show commits
 # copy head commit, example: c14809fa or c14809fafb08b9e96ff2879999ba8c807d10fb07
-git reset --hard c14809fa..HEAD # Won't have to type the entire sha, just a little bit will work
-# or
-git reset --sorf c14809fa..HEAD # Won't have to type the entire sha, just a little bit will work
+# Won't have to type the entire sha, just a little bit will work
+git reset --sorf c14809fa 
+git reset --mixed c14809fa 
+git reset --hard c14809fa
+git reset --hard HEAD~1 # previous 1 back
+git reset --hard HEAD~2 # previous 2 back
+git commit
 ```
-or
+
+**REVERT**
+
 ```bash
 git log --oneline # show commits
 # copy head commit, example: c14809fafb08b9e96ff2879999ba8c807d10fb07
-git revert --no-commit c14809fa..HEAD #  Won't have to type the entire sha, just a little bit will work
+git revert --no-commit c14809fa
 git commit
 ```
 ### 3 of 4 ) Hard delete unpublished commits
 
 If, on the other hand, you want to really get rid of everything you've done since then, there are two possibilities. One, if you haven't published any of these commits, simply reset:
 
+**Bad idea**
+
 ```bash
 # This will destroy any local modifications.
 # Don't do it if you have uncommitted work you want to keep.
 git reset --hard 0d1d7fc32
 git commit
+
+**Better idea**
 
 # Alternatively, if there's work to keep:
 git stash
@@ -192,4 +210,4 @@ git checkout 0d1d7fc32 .
 git commit
 ```
 
-Final
+
