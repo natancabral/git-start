@@ -125,7 +125,7 @@ git brash -d new_branch_name
 > pt: Qual a diferença entre RESET e REVERT?
 > * **RESET** - Aponta para uma COMMIT e apaga tudo que foi criado ou alterado após essa commit específica. Perdendo todo seu histórico. 
 > * 1,2,[3],4,5 -> 1,2,3
-> * **REVERT** - Reverte uma COMMIT específica, as alterações dessa commit escolhida será revertida mas o histórico posteior mantido. 
+> * **REVERT** - Reverte uma COMMIT específica, as alterações dessa commit escolhida será revertida mas o histórico posterior mantido. 
 > * 1,2,[3],4,5 -> 1,2,4,5
 
 #### 1 of 4 ) Previous Branch @{-1}
