@@ -171,6 +171,11 @@ git commit
 
 **REVERT**
 
+# This will revert the last commit:
+```bash
+git revert HEAD
+```
+Or
 ```bash
 git log --oneline # show commits
 git revert c14809fa
