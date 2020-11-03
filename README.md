@@ -36,10 +36,13 @@ git remote -v # show origin
 
 * en: Now configure you user Master
 ```bash
+# -m rename/move branch OR -M rename/move branch + --force
+# rename your current branch
+git branch -m <new-branch-name>
+# rename specific branch
+git branch -m <old-branch-name> <new-branch-name>
 # -b create branch
 git checkout -b master
-# -m rename/move branch OR -M rename/move branch + --force
-git branch -m master default
 ```
 
 ## Global Config
@@ -95,6 +98,13 @@ $ git push origin new_branch_name
 
 * en: On GitHub open repository and find above files a link named BRANCHES.
 All branches storages on this page
+```bash
+# to list brachs
+git branch
+# list too remote branchs
+git branch -a
+
+```
 
 ### Merge Branches
 
