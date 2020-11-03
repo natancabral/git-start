@@ -28,9 +28,9 @@ git init # create files git
 echo '" Title' > README.md
 ```
 
-* en: Now link your local project with remote project:
+* en: Now link your local project with remote project (repository):
 ```bash
-git remote add origin https://github.com/<github_username>/<project_name>.git
+git remote add origin https://github.com/<github_username>/<repository_name>.git
 git remote -v # show origin 
 ```
 
@@ -48,7 +48,7 @@ git push --set-upstream-to origin master
 
 ```bash
 git config --global user.email “youremail@domain.com”
-git config --lobal user.name “gitusername“
+git config --global user.name “gitusername“
 git config --list # list data
 ```
 * en: To edit file
@@ -58,7 +58,7 @@ nano ~/.gitconfig # edit file
 
 * en: Save username for 8h.
 ```bash
-git config --lobal credential.helper ‘cache –timeout=28800’
+git config --global credential.helper ‘cache –timeout=28800’
 ```
 
 * en: Save username permanently.
