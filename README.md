@@ -36,10 +36,10 @@ git remote -v # show origin
 
 * en: Now configure you user Master
 ```bash
-# -m rename/move branch
-# -M rename/move branch + --force
+# -b create branch
+git checkout -b master
+# -m rename/move branch OR -M rename/move branch + --force
 git branch -m master default
-git push --set-upstream-to origin master
 ```
 
 ## Global Config
@@ -126,6 +126,12 @@ git log --oneline # short
 * en: After merge with master
 ```bash
 git brash -d new_branch_name
+```
+## Fork Original
+
+* en: Send your files to origin fork repository
+```bash
+git push --set-upstream origin master
 ```
 
 ## Previous Commits and Branchs
