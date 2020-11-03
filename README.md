@@ -85,7 +85,7 @@ git push origin master # or git push
 ### Create Branch
 
 ```bash
-$ branch checkout -b new_branch_name # no necessary -b if branch exists
+$ git branch checkout -b new_branch_name # no necessary -b if branch exists
 $ git status
 ... add and commit
 $ git push origin new_branch_name
