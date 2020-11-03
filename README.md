@@ -36,7 +36,10 @@ git remote -v # show origin
 
 * en: Now configure you user Master
 ```bash
-git push --set-upstream origin master
+# -m rename/move branch
+# -M rename/move branch + --force
+git branch -m master default
+git push --set-upstream-to origin master
 ```
 
 ## Global Config
