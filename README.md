@@ -129,6 +129,12 @@ git push
 ```bash
 git log
 git log --oneline # short
+git log --all --decorate --oneline --graph # nice | highlight
+# to remember flags: "A DOG"
+# A --all
+# D --decorate
+# O --oneline
+# G --graph
 ```
 
 ### Delete Branch
