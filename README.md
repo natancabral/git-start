@@ -143,6 +143,19 @@ git log --all --decorate --oneline --graph # nice | highlight
 ```bash
 git brash -d new_branch_name
 ```
+## Alias | Shotcuts Commands
+
+* en: Create alias
+```bash
+# to create shotcut "dog"
+# command "log --all --decorate --oneline --graph"
+git config --global alias.dog "log --all --decorate --oneline --graph"
+```
+* en: Remove alias
+```bash
+git config --global --unset alias.dog
+```
+
 ## Fork Original
 
 * en: Send your files to origin fork repository
