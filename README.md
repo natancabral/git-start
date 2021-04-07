@@ -286,4 +286,6 @@ git push --set-upstream origin master
 git push -u origin master
 # or 
 git push -u origin --all
+# or
+git config --global push.default current
 ```
