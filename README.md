@@ -38,9 +38,11 @@ git remote -v # show origin
 ```bash
 # -m rename/move branch OR -M rename/move branch + --force
 # rename your current branch
-git branch -m <new-branch-name>
+git branch -M <new-branch-name>
+git branch -M main
 # rename specific branch
-git branch -m <old-branch-name> <new-branch-name>
+git branch -M <old-branch-name> <new-branch-name>
+git branch -M main master
 # -b create branch
 git checkout -b master
 ```
