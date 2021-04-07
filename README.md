@@ -272,4 +272,18 @@ git checkout 0d1d7fc32 .
 git commit
 ```
 
-
+## Error
+#### --set-upstream origin master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+```git
+git push --set-upstream origin master
+```
+#### Soluction 
+[stackoverflow](https://stackoverflow.com/questions/23401652/fatal-the-current-branch-master-has-no-upstream-branch)
+[stackoverflow](https://stackoverflow.com/a/17096880/6309)
+```bash
+git push -u origin master
+# or 
+git push -u origin --all
+```
