@@ -1,4 +1,8 @@
-### Start Project
+# Learn to use Git Terminal by example
+
+If you are used to work with GUI tool and want to learn the basics of working using the terminal, keep on reading.
+
+## Start Project
 
 * en: Create a new project to start.
 ```bash
@@ -6,7 +10,7 @@ mkdir project-name # create folder project
 cd project-name # enter folder project
 ```
 
-### Initialize Git
+## Initialize Git
 
 * en: You need install GIT first. Terminal: "sudo apt install git".
 
@@ -21,7 +25,7 @@ git init # create files git
 > The next screen you see will be important, so don't close it.
 > Inside click on Code > Clone (url)
 
-### Back Terminal
+## Back Terminal
 
 * en: Create a new file.
 ```bash
@@ -47,7 +51,7 @@ git branch -M main master
 git checkout -b master
 ```
 
-## Global Config
+# Global Config
 
 **Configure Global UserName**
 
@@ -71,11 +75,11 @@ git config --global credential.helper ‘cache –timeout=28800’
 git config --global credential.helper cache
 ```
  
-### Basic Functions
+## Basic Functions
 
 [Basic Functions](https://www.gnial.com.br/gnialhelp/git-and-github-basic-functions/)
 
-### Push Origin Master
+## Push Origin Master
 
 * en: Change file or create a new file and send to repositoty:
 
@@ -85,9 +89,9 @@ git commit -m "words"
 git push origin master # or git push
 ```
 
-## Branch
+# Branch
 
-### Create Branch
+## Create Branch
 
 ```bash
 $ git branch checkout -b new_branch_name # no necessary -b if branch exists
@@ -96,7 +100,7 @@ $ git status
 $ git push origin new_branch_name
 ```
 
-### Find Branches
+## Find Branches
 
 * en: On GitHub open repository and find above files a link named BRANCHES.
 All branches storages on this page
@@ -108,7 +112,7 @@ git branch -a
 
 ```
 
-### Merge Branches
+## Merge Branches
 
 ```bash
 git checkout master # change to main branch, master branch
@@ -125,7 +129,7 @@ git push origin master
 git push
 ```
 
-### Log
+## Log
 
 * en: Show pushes
 ```bash
@@ -139,7 +143,7 @@ git log --all --decorate --oneline --graph # nice | highlight
 # G --graph
 ```
 
-### Delete Branch
+## Delete Branch
 
 * en: After merge with master
 ```bash
