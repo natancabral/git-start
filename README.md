@@ -29,7 +29,7 @@ git init # create files git
 
 * en: Create a new file.
 ```bash
-echo '" Title' > README.md
+echo '# Title' > README.md
 ```
 
 * en: Now link your local project with remote project (repository):
