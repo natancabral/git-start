@@ -42,6 +42,9 @@ git remote -v # show origin
 
 * Settings **>** Developer settings **> New personal access token**
 ** Save your private token
+```
+ghp_1BX2Kw9snvtQq6ttc9vX...uh
+```
 
 # Global Config
 
