@@ -38,19 +38,6 @@ git remote add origin https://github.com/<github_username>/<repository_name>.git
 git remote -v # show origin 
 ```
 
-* en: Now configure you user Master
-```bash
-# -m rename/move branch OR -M rename/move branch + --force
-# rename your current branch
-git branch -M <new-branch-name>
-git branch -M main
-# rename specific branch
-git branch -M <old-branch-name> <new-branch-name>
-git branch -M main master
-# -b create branch
-git checkout -b master
-```
-
 # Global Config
 
 **Configure Global UserName**
@@ -89,12 +76,47 @@ git commit -m "words"
 git push origin master # or git push
 ```
 
+### Change Branch Name
+```bash
+# go to branch
+git old-branch-name
+# rename your current branch
+# -m --force
+git branch -m new-branch-name
+# list all branchs
+git status -a
+# change remote branch too
+git branch -m :old-branch-name new-branch-name
+# finaly remote upstream (-set-upstream-to define future push and sync branchs)
+# pt-BR: finalmente define upstream remoto (-set-upstream-to define onde os próximos push 
+# devem ser enviados, mantendo a branch local e remota em sincronia)
+git push origin -u new-branch-name
+```
+
+```bash
+git remote -v
+```
+[Ref](https://devconnected.com/how-to-change-branch-name-on-git/#:~:text=Change%20Branch%20Name.%20In%20order%20to%20change%20a,to%20the%20branch%20that%20you%20want%20to%20rename.)
+
+
 # Branch
 
 ## Create Branch
 
 ```bash
-git branch checkout -b new-branch-name # no necessary -b if branch exists
+# option 1
+git branch new-branch-name
+git checkout new-branch-name
+# option 2
+git branch checkout -b new-branch-name 
+# no necessary -b if branch exists
+```
+[Ref](https://www.freecodecamp.org/portuguese/news/tutorial-de-git-checkout-remote-branch/)
+
+## Staus / Push
+
+```bash
+# status
 git status
 # ... add and commit
 git push origin new-branch-name
@@ -105,7 +127,7 @@ git push origin new-branch-name
 ```bash
 # change to master or master branch
 git checkout master
-# merge 
+# merge master <- new-branch-name
 git merge new-branch-name
 ```
 
