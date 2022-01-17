@@ -108,7 +108,7 @@ git remote -v
 git branch new-branch-name
 git checkout new-branch-name
 # option 2
-git branch checkout -b new-branch-name 
+git checkout -b new-branch-name 
 # no necessary -b if branch exists
 ```
 [Ref](https://www.freecodecamp.org/portuguese/news/tutorial-de-git-checkout-remote-branch/)
