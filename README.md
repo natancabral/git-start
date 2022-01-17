@@ -38,6 +38,11 @@ git remote add origin https://github.com/<github_username>/<repository_name>.git
 git remote -v # show origin 
 ```
 
+# Token
+
+* Settings **>** Developer settings **> New personal access token**
+** Save your private token
+
 # Global Config
 
 **Configure Global UserName**
