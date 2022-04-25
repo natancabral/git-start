@@ -87,7 +87,9 @@ git push origin master # or git push
 ### Change Branch Name
 ```bash
 # go to branch
-git old-branch-name
+git checkout branch-name
+# a new
+git checkout -m new-branch
 # rename your current branch
 # -m --force
 git branch -m new-branch-name
@@ -316,9 +318,18 @@ git push --set-upstream origin master
 [stackoverflow](https://stackoverflow.com/questions/23401652/fatal-the-current-branch-master-has-no-upstream-branch)
 [stackoverflow](https://stackoverflow.com/a/17096880/6309)
 ```bash
-git push -u origin master
+$ git push -u origin master
 # or 
-git push -u origin --all
-# or
-git config --global push.default current
+$ git push -u origin --all
+# or 
+$ git config --global push.default current
+```
+
+#### git error fatal: Invalid branch name: 'HEAD'
+#### Solution 
+```
+$ git config --global init.defaultBranch main
+$ cat ./.git/HEAD
+$ rm -rf ./.git/HEAD # if necessary
+$ git init
 ```
