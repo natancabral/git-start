@@ -332,4 +332,5 @@ $ git config --global init.defaultBranch main
 $ cat ./.git/HEAD
 $ rm -rf ./.git/HEAD # if necessary
 $ git init
+$ git checkout main --force
 ```
